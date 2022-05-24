@@ -3,6 +3,7 @@
   --header-height: 3.5rem;
   --first-color: hsl(38, 69%, 59%);
   --text-color: hsl(38, 8%, 8%);
+  --hover-color: hsl(40, 35%, 92%);
   --body-font: "Space Grotesk", sans-serif;
   --biggest-font-size: 2.375rem;
   --normal-font-size: .938rem;
@@ -103,6 +104,11 @@ img {
 }
 .nav__link {
   color: var(--text-color);
+  transition: 0.4s;
+}
+.nav__link:hover {
+  color: var(--hover-color);
+  transition: 0.4s;
 }
 .nav__close {
   position: absolute;
@@ -147,7 +153,8 @@ img {
   transition: 0.4s;
 }
 .home__button:hover {
-  box-shadow: 0 4px 12px rgba(34, 24, 6, 0.2);
+  box-shadow: 3px 3px 15px rgba(27, 19, 5, 0.3);
+  transition: 0.4s;
 }
 .home__img img {
   width: 230px;
